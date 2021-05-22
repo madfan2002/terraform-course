@@ -1,5 +1,14 @@
 # Create EC2 instance using Terraform code
+
+## Ubuntu machine AMI is used , the ami id is ami-002f3ac4cb4be3596
+## Region is us-east-1  (N.Virginia)
+
+## Default user is ubuntu
+
+## Command to connect is ssh -i rhushi_keypair_private ubuntu@ec2_dns_name
+
 *Steps to create using Terraform are given below, please perform the following steps before executing the creation of the EC2 instance*
+
 1. Go to AWS and create a keypair from the AWS UI
 2. Private key will be download as a text file, example rhushi_keypair_private  ( no need to add any file extension)
 3. Public key will be stored on the AWS , but this is not available for download
