@@ -7,7 +7,7 @@
 
 ## Default user is ubuntu
 
-## Command to connect is ssh -i rhushi_keypair_private ubuntu@ec2_dns_name
+## Command to connect is ssh -i rhushi-keypair-private ubuntu@ec2_dns_name
 
 *Steps to create using Terraform are given below, please perform the following steps before executing the creation of the EC2 instance*
 
