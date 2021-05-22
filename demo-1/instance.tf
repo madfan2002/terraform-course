@@ -11,10 +11,9 @@ resource "aws_instance" "rhushi_ubuntu_ec2" {
     user = "${var.INSTANCE_USERNAME}"
     private_key = "${file("${var.PATH_TO_PRIVATE_KEY}")}"
   }
-  
 }
 output "public_ip" {
-  description = "list of private ip addresses assigned to ec2 instance"
+  description = "list of public ip addresses assigned to ec2 instance"
   value = [aws_instance.rhushi_ubuntu_ec2.*.public_ip]
 }
 output "ec2-dns" {
