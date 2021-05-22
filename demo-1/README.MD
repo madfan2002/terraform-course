@@ -20,7 +20,19 @@
 7. We have 2 files, rhushi-keypair-private and rhushi-keypair-public
 8. Go to AWS and create default VPC and configure the security group to allow traffic from your IP address 
    ( example 10.25.568.96/32) for ssh(22), http and https
-9.  Now run the terraform script to create ec2 instance and this public key will be stored in the ec2  instance
+
+
+Run following commands
+
+```
+terraform init
+terraform plan
+terraform apply
+terraform destroy 
+
+```
+   
+9.  Now run the terraform script to create ec2 instance and this public key will be stored in the ec2 instance
 10. This EC2 instance will be connected to the default security group.
 11. Connect to the ec2 instance using the command ssh -i rhushi-keypair-private ec2-public-dns-name
 12. Delete the EC2 instance
