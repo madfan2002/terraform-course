@@ -4,7 +4,7 @@ resource "aws_key_pair" "rhushi_key_pair" {
 }
 resource "aws_instance" "rhushi_ubuntu_ec2" {
    ami           = var.AMIS[var.AWS_REGION]
-  instance_type = "t4g.nano"
+  instance_type = "t2.nano"
   
   key_name = "${aws_key_pair.rhushi_key_pair.key_name}"
   connection {
