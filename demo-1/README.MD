@@ -1,6 +1,8 @@
 # Create EC2 instance using Terraform code
 
 ## Ubuntu machine AMI is used , the ami id is ami-002f3ac4cb4be3596
+
+## Machine size is tg4.nano
 ## Region is us-east-1  (N.Virginia)
 
 ## Default user is ubuntu
