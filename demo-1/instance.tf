@@ -10,6 +10,7 @@ resource "aws_instance" "rhushi_ubuntu_ec2" {
   connection {
     user = "${var.INSTANCE_USERNAME}"
     private_key = "${file("${var.PATH_TO_PRIVATE_KEY}")}"
+    host = coalesce(self.public_ip,self.private_ip)
   }
   provisioner "local-exec" {
     command = "echo ${aws_instance.rhushi_ubuntu_ec2.public_ip} >> public_ips.txt"
