@@ -11,6 +11,9 @@ resource "aws_instance" "rhushi_ubuntu_ec2" {
     user = "${var.INSTANCE_USERNAME}"
     private_key = "${file("${var.PATH_TO_PRIVATE_KEY}")}"
   }
+  provisioner "local-exec" {
+    command = "echo ${aws_instance.rhushi_ubuntu_ec2.public_ip} >> public_ips.txt"
+  }
 }
 output "public_ip" {
   description = "list of public ip addresses assigned to ec2 instance"
