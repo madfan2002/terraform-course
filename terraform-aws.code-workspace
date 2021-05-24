@@ -3,5 +3,13 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"sundial.autoLocale": true,
+		"sundial.sunset": "17:00",
+		"sundial.nightSettings": {
+		"workbench.preferredLightColorTheme":"GitHub Light Default",
+		"workbench.preferredDarkColorTheme":"GitHub Dark Dimmed"
+		}
+	}
 }
