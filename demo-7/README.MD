@@ -7,6 +7,10 @@
 # VPC is 172.16.0.0/12 is largest CIDR block, which is possible
 # VPC is 192.168.0.0/16 is largest CIDR block, which is possible
 
+# In this demo/example we create a VPC with 3 public subnets and 3 private subnets, 1 default route table and nat gateway
+# Default route table will connect public subnets to internet gateway
+# nat gateway will connect the private subnets to internet gateway
+
 | Range          	| From        	| To                 	|
 |----------------	|-------------	|--------------------	|
 | 10.0.0.0/8     	| 10.0.0.0    	| 10.255.255.255.255 	|
