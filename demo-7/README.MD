@@ -35,4 +35,9 @@
 | 10.0.1.0/24 	| 255.255.255.0   	| 256             	| All addresses within from  10.0.1.0 - 10.0.1.255 	| 10.0.1.1, 10.0.1.2, 10.0.1.3     	|
 | 10.0.0.5/32 	| 255.255.255.255 	| 1               	| Single host                                      	| 10.0.0.5                         	|
 
+# AWS VPC Created by Terraform
+![alt](./AWS-VPC-Design-CreatedbyTerraform.jpg)
+
+# Logical Architecture
 ![alt](./vpc.drawio.svg)
+
