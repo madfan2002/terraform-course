@@ -1,4 +1,4 @@
-# nat gw
+# nat gw ( connects the subnets to internet )
 resource "aws_eip" "nat" {
   vpc = true
 }
