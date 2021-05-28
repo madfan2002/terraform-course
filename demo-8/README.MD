@@ -2,7 +2,7 @@
 
 # 1 VPC Per Region, with 6 subnets ( 3 public subnets + 3 private subnets )
 
-# In this demo/example we create a VPC with 3 public subnets and 3 private subnets, 1 route table excluding default and place and EC2 instance in public subnet main-public-1
+# In this demo/example we create a VPC with 3 public subnets and 3 private subnets, 1 route table excluding default and place and EC2 instance in public subnet main-public-1a
 
 # Default route table will connect public subnets to internet gateway
 
