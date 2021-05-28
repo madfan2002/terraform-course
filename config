@@ -1,0 +1,6 @@
+Host github.com/madfan2002
+  User madfan2002
+  IdentifyFile ~/.ssh/id_rsa
+Host github.com/rhushikeshv
+  User rhushikesh.velankar
+  
