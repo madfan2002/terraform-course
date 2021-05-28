@@ -24,7 +24,7 @@
 | 172.16.0.0/12  	| 172.16.0.0  	| 172.31.255.255     	|
 | 192.168.0.0/16 	| 192.168.0.0 	| 192.168.255.255    	|
 
-# Guidelines for CIDR, Network mask, IP addresses with examples
+# Guidelines for CIDR, Network mask, IP addresses with examples as below
 
 | Range       	| Network mask    	| Total addresses 	| Description                                      	| Examples                         	|
 |-------------	|-----------------	|-----------------	|--------------------------------------------------	|----------------------------------	|
