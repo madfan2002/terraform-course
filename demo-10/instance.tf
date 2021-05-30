@@ -38,4 +38,5 @@ output "ec2-dns" {
   description = "dns name for ec2 instance"
   value       = [aws_instance.rhushi_ubuntu_ec2.*.public_dns]
 }
+# output 
 
