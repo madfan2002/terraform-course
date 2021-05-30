@@ -1,4 +1,4 @@
-resource "aws_instance" "example" {
+resource "aws_instance" "rhushi_ubuntu_ec2" {
   ami           = var.AMIS[var.AWS_REGION]
   instance_type = "t2.nano"
 
@@ -27,8 +27,8 @@ resource "aws_ebs_volume" "ebs-volume-1" {
 resource "aws_volume_attachment" "ebs-volume-1-attachment" {
   device_name  = var.INSTANCE_DEVICE_NAME
   volume_id    = aws_ebs_volume.ebs-volume-1.id
-  instance_id  = aws_instance.example.id
-  skip_destroy = true                            # skip destroy to avoid issues with terraform destroy
+  instance_id  = aws_instance.rhushi_ubuntu_ec2.id
+  skip_destroy = true # skip destroy to avoid issues with terraform destroy
 }
 output "public_ip" {
   description = "list of public ip addresses assigned to ec2 instance"
